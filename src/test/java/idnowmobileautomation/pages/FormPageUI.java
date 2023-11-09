@@ -93,17 +93,15 @@ public class FormPageUI {
             }
 
             if (line == null) {
-                // Hedef satır bulunamadı, isteğe bağlı olarak bir hata mesajı veya işlem eklenebilir.
+
                 System.out.println("Hedef satır bulunamadı.");
                 return;
             }
 
             String[] values = line.split(",");
 
-            // Web formunu aç
             Driver.get().get(baseURL);
 
-            // Formu doldur
             transactionNumberInputBox.sendKeys(values[0], Keys.ENTER);
             salutationDropdown.sendKeys("Mr.");
             firstnameInputBox.sendKeys(values[1],Keys.ENTER);
@@ -125,11 +123,6 @@ public class FormPageUI {
             wait.until(ExpectedConditions.elementToBeClickable(consentCheckBox)).click();
             org.testng.Assert.assertTrue(consentCheckBox.isSelected(),"Please select the Consent Box!");
             continueButton.click();
-
-            // Diğer form elemanlarına da aynı şekilde değerleri ekleyebilirsin
-
-            // Scroll ve diğer adımlar
-
 
         } catch (IOException e) {
             e.printStackTrace();

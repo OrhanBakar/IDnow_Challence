@@ -50,7 +50,7 @@ public class Ident_IdTest {
         //3. Do we now see the "Terms and Condition screen"?
         identIdPage.isTermsAndConditionsScreenDisplayed();
 
-// 4. Click on the links to open the ‘Terms and Conditions’, check they are shown
+        // 4. Click on the links to open the ‘Terms and Conditions’, check they are shown
         identIdPage.navigateToPrivacyPolicy();
 
         //5. Navigate back to active "Terms and Conditions" screen of the app
