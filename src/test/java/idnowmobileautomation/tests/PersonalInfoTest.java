@@ -6,12 +6,12 @@ import idnowmobileautomation.utilities.Driver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-public class IDnowCodeChallenge {
+public class PersonalInfoTest {
 
     private int targetRow = 10;
     FormPageUI formPageUI=new FormPageUI();
 
-    public String Ident_ID="";
+    public static String Ident_ID;
 
 
     @Test

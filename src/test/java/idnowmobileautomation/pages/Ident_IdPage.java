@@ -1,2 +1,115 @@
-package idnowmobileautomation.pages;public class Ident_IdPage {
+package idnowmobileautomation.pages;
+
+import idnowmobileautomation.tests.PersonalInfoTest;
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.pagefactory.AndroidFindBy;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
+public class Ident_IdPage {
+
+   public String accessIdentNumber(){
+       String identNumber=PersonalInfoTest.Ident_ID;
+       return identNumber;
+   }
+    AppiumDriver appiumDriver;
+   WebDriverWait wait;
+    public Ident_IdPage(AppiumDriver<MobileElement> appiumDriver) {
+        PageFactory.initElements(new AppiumFieldDecorator(appiumDriver), this);
+    }
+
+    @AndroidFindBy(id="de.idnow.androidaidemo:id/editTextCode")
+    public MobileElement identIDBox;
+
+    @AndroidFindBy(id="de.idnow.androidaidemo:id/editTextCode")
+    private WebElement identNummerBox;
+
+    @AndroidFindBy(id="de.idnow.androidaidemo:id/start_ident")
+    private WebElement confirmButton;
+
+    @AndroidFindBy(id="de.idnow.androidaidemo:id/consentScreenHeader")
+    private WebElement termsAndConditionsHeader;
+
+    @AndroidFindBy(id="de.idnow.androidaidemo:id/textViewPrivacyPolicy")
+    private WebElement privacyPolicyLink;
+
+    @AndroidFindBy(id="de.idnow.androidaidemo:id/privacy_item_body_checkbox")
+    private WebElement termsAndConditionsCheckbox;
+
+    @AndroidFindBy(id="de.idnow.androidaidemo:id/buttonStartIdent")
+    private WebElement startIdentButton;
+
+    @AndroidFindBy(id="com.android.permissioncontroller:id/permission_allow_foreground_only_button")
+    private WebElement allowCameraAccess;
+
+    public boolean isIdentIDEmpty() {
+        wait.until(ExpectedConditions.invisibilityOf(identIDBox));
+        return identIDBox.getText().isEmpty();
+    }
+
+    public void isConfirmButtonActivated() {
+        identIDBox.sendKeys(accessIdentNumber());
+
+        if(confirmButton.isEnabled()) {
+            identIDBox.sendKeys(identIDBox.getText());
+            confirmButton.click();
+        }
+        System.out.println("Confirm buton is not activated");
+
+
+    }
+
+    public void isTermsAndConditionsScreenDisplayed() {
+        wait.until(ExpectedConditions.invisibilityOf(termsAndConditionsHeader));
+        Assert.assertTrue(termsAndConditionsHeader.isDisplayed(), "Terms and Conditions screen is not displayed");
+    }
+
+    public void navigateToPrivacyPolicy() {
+
+        Assert.assertTrue(privacyPolicyLink.isDisplayed(), "Privacy Policy link is not displayed");
+        privacyPolicyLink.click();
+        wait.until(ExpectedConditions.urlContains("privacy"));
+        Assert.assertTrue(appiumDriver.getCurrentUrl().contains("privacy"),"We are not on the Privacy Policy page");
+
+
+    }
+    public void navigateBackToTermsAndConditions() {
+        appiumDriver.navigate().back();
+        wait.until(ExpectedConditions.invisibilityOf(termsAndConditionsHeader));
+        Assert.assertTrue(termsAndConditionsHeader.isDisplayed(), "Terms and Conditions screen is not displayed");
+
+    }
+
+    public void checkTermsAndConditionsBox() {
+        wait.until(ExpectedConditions.elementToBeClickable(termsAndConditionsCheckbox));
+        termsAndConditionsCheckbox.click();
+
+    }
+
+    public void confirmTermsAndConditions() {
+        wait.until(ExpectedConditions.elementToBeClickable(startIdentButton));
+        Assert.assertTrue(startIdentButton.isDisplayed(), "The Start Ident button is not clickable");
+        startIdentButton.click();
+
+    }
+
+    public void allowCameraAccess() {
+        wait.until(ExpectedConditions.elementToBeClickable(allowCameraAccess));
+        allowCameraAccess.click();
+    }
+
+
+
+
+
+
+
+
+
 }

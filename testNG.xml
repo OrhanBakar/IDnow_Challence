@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite">
+    <test name="WebTests">
+        <classes>
+            <class name="idnowmobileautomation.tests.PersonalInfoTest"/>
+
+        </classes>
+    </test>
+    <test name="MobileTests">
+        <classes>
+            <class name="idnowmobileautomation.tests.Ident_IdTest"/>
+
+        </classes>
+    </test>
+</suite>

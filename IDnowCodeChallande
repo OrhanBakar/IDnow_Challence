@@ -1,0 +1,123 @@
+PART-1
+
+GET identifications?status=in_progress&startIndex=0&pageSize=2 → A, B
+
+What pagination errors do you expect and how to fix them?
+
+Pagination is the process of dividing a set of items into discrete pages. It's commonly used in web applications to display
+a large number of items without overwhelming the user.It is commonly used in mobile applications, especially when dealing with
+large sets of data. Here are a few reasons why pagination is relevant for mobile app testing:
+
+Performance Testing:
+
+Mobile devices often have limited resources compared to desktop computers. Pagination allows you to test how well your app handles
+and loads data in chunks, ensuring a smooth user experience without excessive memory or processing requirements.
+
+User Experience Testing:
+
+Pagination affects how users navigate through content. Testing pagination on mobile helps ensure that the user interface is
+responsive and that users can easily move between pages without lag or errors.
+
+Network Conditions:
+
+Mobile devices frequently switch between different network conditions (3G, 4G, Wi-Fi). Pagination testing allows you to evaluate how
+well your app handles fetching and displaying data under varying network speeds.
+
+Offline Mode:
+
+In mobile apps, users may interact with content while offline. Testing pagination in offline mode ensures that the app can handle
+paging through locally cached data or provides appropriate feedback when there's no internet connection.
+
+Edge Cases:
+
+Mobile devices may have different screen sizes and resolutions. Testing pagination helps identify any issues related to how the UI
+adapts to various screen sizes, ensuring a consistent and visually appealing experience.
+
+Device Compatibility:
+
+Different mobile devices may have different processing speeds and capabilities. Pagination testing helps ensure that the app performs
+well on a variety of devices and doesn't cause performance bottlenecks.
+
+Load Testing:
+
+If your app communicates with a server to fetch paginated data, it's essential to test how well the server handles multiple requests
+and the app copes with large datasets.
+
+In summary, incorporating pagination testing in mobile app testing is crucial for assessing performance, user experience, and
+compatibility across various devices and network conditions. It ensures that your app delivers a reliable and enjoyable experience
+to users.
+
+So the potential pagination errors could be:
+
+
+1. **Exceeding Total Pages:**
+
+   - If the `startIndex` is set too high (beyond the total number of items), it might return an empty result.
+   We should check if `startIndex` is within the valid range (0 to total items - 1).
+
+2. **Negative `pageSize` or `startIndex`:**
+
+   - A negative value for `pageSize` or `startIndex` doesn't make sense and could lead to unexpected behavior.
+   We should validate that `pageSize` and `startIndex` are non-negative.
+
+3. **Invalid `pageSize` Value:**
+
+   - If `pageSize` is set to 0 or a very large value, it might not provide a meaningful paginated experience.
+   So a reasonable limit for `pageSize`should be set so that we can handle invalid values gracefully.
+
+4. **Pagination Beyond Total Pages:**
+
+   - If the user keeps clicking "next" beyond the last page, it might return an empty result or an error.
+   It should be ensured that the user can't navigate beyond the total number of pages. The "next" button on the last page should be
+   disabled.
+
+5. **Not Handling Edge Cases:**
+
+   - For the first page, `startIndex` should be 0, and for subsequent pages, it should be `(pageNumber - 1) * pageSize`.
+   The `startIndex` should be calculated accordingly based on the current page number.
+
+6. **Consistency and Stability:**
+
+   The pagination behavior should remain consistent across requests. Unpredictable changes in the API response structure can break
+   client applications.
+
+   The pagination logic and any potential changes in the API documentation should be documented clearly
+
+7. **Rate Limiting:**
+
+   - If there are API rate limits, we should be mindful of the number of requests made in a short period.
+   Implement proper error handling for rate-limiting scenarios and consider providing information on rate limits in the API documentation.
+
+   ======================================================================================================================================================================================
+
+   Part 2 – Copy Method (coding in Python) - 45 mins
+
+                    copy(File source, File dest) Implement all test cases you can think of.
+
+
+The shutil.copy function is used to perform the actual file copy operation. It's a part of the standard library and provides a simple
+way to copy files.
+
+The try-except block is used to handle different scenarios, such as the source file not being found, permission errors, or any other
+unexpected exceptions.
+
+The test cases cover various scenarios, including successful copy, source file not found, permission errors, using a directory as
+source or destination, handling an empty source file, and attempting to copy a file to itself.
+
+
+
+import shutil
+import os
+
+def copy(source, dest):
+    try:
+        # Using shutil.copy to copy the file from source to destination
+
+        shutil.copy(source, dest)
+        print(f"File copied successfully from {source} to {dest}")
+    except FileNotFoundError:
+        print("Source file not found. Copy operation failed.")
+    except PermissionError:
+        print("Permission error. Copy operation failed.")
+    except Exception as e:
+        print(f"An error occurred: {e}. Copy operation failed.")

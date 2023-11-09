@@ -4,11 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9078552-3a59-4cb2-a782-089dbdf4e496" name="Changes" comment="" />
+    <list default="true" id="f9078552-3a59-4cb2-a782-089dbdf4e496" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IDnowCodeChallande" beforeDir="false" afterPath="$PROJECT_DIR$/IDnowCodeChallande" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/pages/FormPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/pages/FormPageUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/pages/Ident_IdPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/pages/Ident_IdPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/tests/Ident_IdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/tests/Ident_IdTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/tests/PersonalInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/tests/PersonalInfoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/utilities/ConfigurationReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/utilities/ConfigurationReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/utilities/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testNG.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -20,9 +39,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2XulzGr64k4g18gNnFIO2jlqWOD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -32,12 +51,130 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.FillingFormUITest.fillPersonalInfoForm.executor": "Run",
+    "TestNG.IDnowCodeChallenge.IdentId_VerificationTest.executor": "Run",
+    "TestNG.IDnowCodeChallenge.executor": "Run",
+    "TestNG.IDnowCodeChallenge.fillPersonalInfoForm.executor": "Run",
+    "TestNG.Ident_IDPage.openWebsite.executor": "Run",
+    "TestNG.Ident_IdTest.IdentIdPageValidation.executor": "Run",
+    "TestNG.PersonalInfoTest.fillPersonalInfoForm.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/obkr4/AquaProjects/MobileTestIDnow",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\obkr4\AquaProjects\MobileTestIDnow" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.Ident_IdTest.IdentIdPageValidation">
+    <configuration name="Ident_IDMobilePage.openWebsite" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MobileTestIDnow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="idnowmobileautomation.pages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="idnowmobileautomation.pages" />
+      <option name="MAIN_CLASS_NAME" value="idnowmobileautomation.pages.Ident_IDMobilePage" />
+      <option name="METHOD_NAME" value="openWebsite" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ident_IdTest.IdentIdPageValidation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MobileTestIDnow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="idnowmobileautomation.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="idnowmobileautomation.tests" />
+      <option name="MAIN_CLASS_NAME" value="idnowmobileautomation.tests.Ident_IdTest" />
+      <option name="METHOD_NAME" value="IdentIdPageValidation" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonalInfoTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MobileTestIDnow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="idnowmobileautomation.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="idnowmobileautomation.tests" />
+      <option name="MAIN_CLASS_NAME" value="idnowmobileautomation.tests.PersonalInfoTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonalInfoTest.IdentId_VerificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MobileTestIDnow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="idnowmobileautomation.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="idnowmobileautomation.tests" />
+      <option name="MAIN_CLASS_NAME" value="idnowmobileautomation.tests.PersonalInfoTest" />
+      <option name="METHOD_NAME" value="IdentId_VerificationTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonalInfoTest.fillPersonalInfoForm" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MobileTestIDnow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="idnowmobileautomation.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="idnowmobileautomation.tests" />
+      <option name="MAIN_CLASS_NAME" value="idnowmobileautomation.tests.PersonalInfoTest" />
+      <option name="METHOD_NAME" value="fillPersonalInfoForm" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.Ident_IdTest.IdentIdPageValidation" />
+        <item itemvalue="TestNG.PersonalInfoTest.fillPersonalInfoForm" />
+        <item itemvalue="TestNG.PersonalInfoTest" />
+        <item itemvalue="TestNG.PersonalInfoTest.IdentId_VerificationTest" />
+        <item itemvalue="TestNG.Ident_IDMobilePage.openWebsite" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -46,7 +183,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699487108148</updated>
-      <workItem from="1699487109267" duration="5000" />
+      <workItem from="1699487109267" duration="6973000" />
+      <workItem from="1699515637748" duration="20321000" />
     </task>
     <servers />
   </component>
