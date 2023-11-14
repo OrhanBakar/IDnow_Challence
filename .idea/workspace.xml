@@ -177,6 +177,7 @@
       <workItem from="1699959531046" duration="6051000" />
       <workItem from="1699968373029" duration="2740000" />
       <workItem from="1699971582718" duration="350000" />
+      <workItem from="1699974410551" duration="423000" />
     </task>
     <task id="LOCAL-00001" summary="You can find the answers of the part-1 and part-2 in IDnowCodeCjallende file">
       <option name="closed" value="true" />
@@ -218,7 +219,23 @@
       <option name="project" value="LOCAL" />
       <updated>1699971922997</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="You can find the answers of the part-1 and part-2 in IDnowCodeCjallende file">
+      <option name="closed" value="true" />
+      <created>1699974603588</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699974603588</updated>
+    </task>
+    <task id="LOCAL-00007" summary="You can find the answers of the part-1 and part-2 in IDnowCodeCjallende file">
+      <option name="closed" value="true" />
+      <created>1699974810259</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699974810259</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
