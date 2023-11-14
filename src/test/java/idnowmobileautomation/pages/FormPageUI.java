@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.Rotatable;
+import org.testng.Assert;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -94,7 +95,7 @@ public class FormPageUI {
 
             if (line == null) {
 
-                System.out.println("Hedef satır bulunamadı.");
+                System.out.println("Target row couldn't be found");
                 return;
             }
 
@@ -121,7 +122,7 @@ public class FormPageUI {
             ((JavascriptExecutor) Driver.get()).executeScript("arguments[0].scrollIntoView(true);",
                     consentCheckBox);
             wait.until(ExpectedConditions.elementToBeClickable(consentCheckBox)).click();
-            org.testng.Assert.assertTrue(consentCheckBox.isSelected(),"Please select the Consent Box!");
+            Assert.assertTrue(consentCheckBox.isSelected(),"Please select the Consent Box!");
             continueButton.click();
 
         } catch (IOException e) {

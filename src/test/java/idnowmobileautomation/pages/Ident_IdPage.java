@@ -27,29 +27,29 @@ public class Ident_IdPage {
     public MobileElement identIDBox;
 
     @AndroidFindBy(id="de.idnow.androidaidemo:id/editTextCode")
-    private WebElement identNummerBox;
+    public WebElement identNummerBox;
 
     @AndroidFindBy(id="de.idnow.androidaidemo:id/start_ident")
-    private WebElement confirmButton;
+    public WebElement confirmButton;
 
     @AndroidFindBy(id="de.idnow.androidaidemo:id/consentScreenHeader")
-    private WebElement termsAndConditionsHeader;
+    public WebElement termsAndConditionsHeader;
 
     @AndroidFindBy(id="de.idnow.androidaidemo:id/textViewPrivacyPolicy")
-    private WebElement privacyPolicyLink;
+    public WebElement privacyPolicyLink;
 
     @AndroidFindBy(id="de.idnow.androidaidemo:id/privacy_item_body_checkbox")
-    private WebElement termsAndConditionsCheckbox;
+    public WebElement termsAndConditionsCheckbox;
 
     @AndroidFindBy(id="de.idnow.androidaidemo:id/buttonStartIdent")
-    private WebElement startIdentButton;
+    public WebElement startIdentButton;
 
     @AndroidFindBy(id="com.android.permissioncontroller:id/permission_allow_foreground_only_button")
-    private WebElement allowCameraAccess;
+    public WebElement allowCameraAccess;
 
     public boolean isIdentIDEmpty() {
-        wait.until(ExpectedConditions.invisibilityOf(identIDBox));
-        return identIDBox.getText().isEmpty();
+        wait.until(ExpectedConditions.invisibilityOf(identNummerBox));
+        return identNummerBox.getText().isEmpty();
     }
 
     public void isConfirmButtonActivated() {

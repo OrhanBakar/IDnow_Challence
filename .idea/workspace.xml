@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9078552-3a59-4cb2-a782-089dbdf4e496" name="Changes" comment="You can find the answers of the part-1 and part-2 in IDnowCodeCjallende file" />
+    <list default="true" id="f9078552-3a59-4cb2-a782-089dbdf4e496" name="Changes" comment="You can find the answers of the part-1 and part-2 in IDnowCodeCjallende file">
+      <change afterPath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/runners/CukesRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/runners/FailedTestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/step_definitions/Hooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/step_definitions/Ident_IDTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ident_IdTest.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/pages/FormPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/pages/FormPageUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/pages/Ident_IdPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/pages/Ident_IdPage.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +46,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Cucumber Java.Scenario: With the sample app from https://go.wetransfer.com/t-BCrrwNSzUF.executor": "Run",
+    "JUnit.CukesRunner.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -64,20 +75,37 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.Ident_IdTest.IdentIdPageValidation">
-    <configuration name="Ident_IDMobilePage.openWebsite" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: With the sample app from https://go.wetransfer.com/t-BCrrwNSzUF" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ident_IdTest.feature" />
+      <option name="GLUE" value="idnowmobileautomation.step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="MobileTestIDnow" />
+      <option name="NAME_FILTER" value="^With the sample app from https\:\/\/go\.wetransfer\.com\/t\-BCrrwNSzUF$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^With the sample app from https\:\/\/go\.wetransfer\.com\/t\-BCrrwNSzUF$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: With the sample app from https://go.wetransfer.com/t-BCrrwNSzUF" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="idnowmobileautomation.pages.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="idnowmobileautomation.pages" />
-      <option name="MAIN_CLASS_NAME" value="idnowmobileautomation.pages.Ident_IDMobilePage" />
-      <option name="METHOD_NAME" value="openWebsite" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CukesRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MobileTestIDnow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="idnowmobileautomation.runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="idnowmobileautomation.runners" />
+      <option name="MAIN_CLASS_NAME" value="idnowmobileautomation.runners.CukesRunner" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,24 +145,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonalInfoTest.IdentId_VerificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MobileTestIDnow" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="idnowmobileautomation.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="idnowmobileautomation.tests" />
-      <option name="MAIN_CLASS_NAME" value="idnowmobileautomation.tests.PersonalInfoTest" />
-      <option name="METHOD_NAME" value="IdentId_VerificationTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PersonalInfoTest.fillPersonalInfoForm" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MobileTestIDnow" />
       <extension name="coverage">
@@ -157,9 +167,9 @@
       <list>
         <item itemvalue="TestNG.Ident_IdTest.IdentIdPageValidation" />
         <item itemvalue="TestNG.PersonalInfoTest.fillPersonalInfoForm" />
+        <item itemvalue="Cucumber Java.Scenario: With the sample app from https://go.wetransfer.com/t-BCrrwNSzUF" />
+        <item itemvalue="JUnit.CukesRunner" />
         <item itemvalue="TestNG.PersonalInfoTest" />
-        <item itemvalue="TestNG.PersonalInfoTest.IdentId_VerificationTest" />
-        <item itemvalue="TestNG.Ident_IDMobilePage.openWebsite" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +182,9 @@
       <option name="presentableId" value="Default" />
       <updated>1699487108148</updated>
       <workItem from="1699487109267" duration="6973000" />
-      <workItem from="1699515637748" duration="20662000" />
+      <workItem from="1699515637748" duration="21673000" />
+      <workItem from="1699959531046" duration="6051000" />
+      <workItem from="1699968373029" duration="1982000" />
     </task>
     <task id="LOCAL-00001" summary="You can find the answers of the part-1 and part-2 in IDnowCodeCjallende file">
       <option name="closed" value="true" />
@@ -182,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699549362033</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="You can find the answers of the part-1 and part-2 in IDnowCodeCjallende file">
+      <option name="closed" value="true" />
+      <created>1699549691039</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699549691039</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
