@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class PersonalInfoTest {
 
-    private int targetRow = 10;
+    private int targetRow;
     FormPageUI formPageUI=new FormPageUI();
 
     public static String Ident_ID;
@@ -17,7 +17,7 @@ public class PersonalInfoTest {
     @Test
     public void fillPersonalInfoForm() {
         formPageUI.fillPersonalInfoForm(ConfigurationReader.get("baseURL"),
-                "UserData.csv", targetRow);
+                "UserData.csv", 8);
         Ident_ID=formPageUI.ident_ID.getText();
         System.out.println("Ident_ID = " + Ident_ID);
 
