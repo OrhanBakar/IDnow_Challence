@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9078552-3a59-4cb2-a782-089dbdf4e496" name="Changes" comment="You can find the answers of the part-1 and part-2 in IDnowCodeCjallende file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f9078552-3a59-4cb2-a782-089dbdf4e496" name="Changes" comment="You can find the answers of the part-1 and part-2 in IDnowCodeCjallende file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +65,7 @@
       <recent name="C:\Users\obkr4\AquaProjects\MobileTestIDnow" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PersonalInfoTest.fillPersonalInfoForm">
+  <component name="RunManager" selected="TestNG.Ident_IdTest.IdentIdPageValidation">
     <configuration name="Scenario: With the sample app from https://go.wetransfer.com/t-BCrrwNSzUF" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ident_IdTest.feature" />
@@ -158,8 +156,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PersonalInfoTest.fillPersonalInfoForm" />
         <item itemvalue="TestNG.Ident_IdTest.IdentIdPageValidation" />
+        <item itemvalue="TestNG.PersonalInfoTest.fillPersonalInfoForm" />
         <item itemvalue="Cucumber Java.Scenario: With the sample app from https://go.wetransfer.com/t-BCrrwNSzUF" />
         <item itemvalue="JUnit.CukesRunner" />
         <item itemvalue="TestNG.PersonalInfoTest" />
@@ -178,6 +176,7 @@
       <workItem from="1699515637748" duration="21673000" />
       <workItem from="1699959531046" duration="6051000" />
       <workItem from="1699968373029" duration="2740000" />
+      <workItem from="1699971582718" duration="350000" />
     </task>
     <task id="LOCAL-00001" summary="You can find the answers of the part-1 and part-2 in IDnowCodeCjallende file">
       <option name="closed" value="true" />
@@ -211,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699970610873</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="You can find the answers of the part-1 and part-2 in IDnowCodeCjallende file">
+      <option name="closed" value="true" />
+      <created>1699971922996</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699971922997</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

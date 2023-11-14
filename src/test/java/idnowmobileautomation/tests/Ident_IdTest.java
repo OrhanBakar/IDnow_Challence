@@ -22,7 +22,7 @@ public class Ident_IdTest {
         try {
             DesiredCapabilities cap = new DesiredCapabilities();
 
-            cap.setCapability("deviceName", "samsung SM-A715F");
+            cap.setCapability("deviceName", "samsung SM-A715F API 33");
             cap.setCapability("platformName", "Android");
             cap.setCapability("appPackage", "de.idnow.androidaidemo");
             cap.setCapability("appActivity", "de.idnow.android.IDnowDemoMainActivity");
