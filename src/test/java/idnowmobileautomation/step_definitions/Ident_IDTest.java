@@ -1,31 +1,26 @@
 package idnowmobileautomation.step_definitions;
 
-import idnowmobileautomation.pages.FormPageUI;
+import idnowmobileautomation.pages.PersonalInfoPage;
 import idnowmobileautomation.pages.Ident_IdPage;
 import idnowmobileautomation.tests.Ident_IdTest;
-import idnowmobileautomation.utilities.ConfigurationReader;
 import idnowmobileautomation.utilities.Driver;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 public class Ident_IDTest {
     private AppiumDriver<MobileElement> appiumDriver;
     public Ident_IdPage identIdPage;
-    FormPageUI formPageUI = new FormPageUI();
+    PersonalInfoPage formPageUI = new PersonalInfoPage();
     Ident_IdPage identIdPageApp = new Ident_IdPage(appiumDriver);
     WebDriverWait wait;
     String Ident_ID;

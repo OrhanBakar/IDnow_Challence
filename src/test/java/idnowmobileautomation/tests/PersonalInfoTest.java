@@ -1,6 +1,6 @@
 package idnowmobileautomation.tests;
 
-import idnowmobileautomation.pages.FormPageUI;
+import idnowmobileautomation.pages.PersonalInfoPage;
 import idnowmobileautomation.utilities.ConfigurationReader;
 import idnowmobileautomation.utilities.Driver;
 import org.testng.annotations.AfterMethod;
@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class PersonalInfoTest {
 
     private int targetRow;
-    FormPageUI formPageUI=new FormPageUI();
+    PersonalInfoPage formPageUI=new PersonalInfoPage();
 
     public static String Ident_ID;
 

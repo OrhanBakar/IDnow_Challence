@@ -7,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.Rotatable;
 import org.testng.Assert;
 
 import java.io.BufferedReader;
@@ -15,9 +14,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.time.Duration;
 
-public class FormPageUI {
+public class PersonalInfoPage {
 
-    public FormPageUI() {
+    public PersonalInfoPage() {
 
         PageFactory.initElements(Driver.get(),this);
     }
