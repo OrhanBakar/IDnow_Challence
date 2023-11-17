@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
 
         features = "src/test/resources/features",
         glue = "src/test/java/idnowmobileautomation/step_definitions",
-        dryRun=true,
+        dryRun=false,
         tags=""
         //eski versiyonu   tags={"@driver","@VYT-123"}
 

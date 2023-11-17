@@ -13,10 +13,7 @@ import org.testng.Assert;
 
 public class Ident_IdPage {
 
-   public String accessIdentNumber(){
-       String identNumber=PersonalInfoTest.Ident_ID;
-       return identNumber;
-   }
+
     AppiumDriver appiumDriver;
    WebDriverWait wait;
     public Ident_IdPage(AppiumDriver<MobileElement> appiumDriver) {
@@ -46,6 +43,11 @@ public class Ident_IdPage {
 
     @AndroidFindBy(id="com.android.permissioncontroller:id/permission_allow_foreground_only_button")
     public WebElement allowCameraAccess;
+
+    public String accessIdentNumber(){
+        String identNumber=PersonalInfoTest.Ident_ID;
+        return identNumber;
+    }
 
     public boolean isIdentIDEmpty() {
         wait.until(ExpectedConditions.invisibilityOf(identNummerBox));
