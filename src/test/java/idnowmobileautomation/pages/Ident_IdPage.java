@@ -55,6 +55,7 @@ public class Ident_IdPage {
     public void isConfirmButtonActivated() {
 
         identIDBox.sendKeys(accessIdentNumber());
+        wait.until(ExpectedConditions.elementToBeClickable(confirmButton));
         Assert.assertTrue(confirmButton.isEnabled(),"Confirm button is not activated");
         confirmButton.click();
 
