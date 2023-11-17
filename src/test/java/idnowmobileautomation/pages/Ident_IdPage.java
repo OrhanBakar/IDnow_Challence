@@ -53,14 +53,10 @@ public class Ident_IdPage {
     }
 
     public void isConfirmButtonActivated() {
+
         identIDBox.sendKeys(accessIdentNumber());
-
-        if(confirmButton.isEnabled()) {
-            identIDBox.sendKeys(identIDBox.getText());
-            confirmButton.click();
-        }
-        System.out.println("Confirm buton is not activated");
-
+        Assert.assertTrue(confirmButton.isEnabled(),"Confirm button is not activated");
+        confirmButton.click();
 
     }
 
