@@ -27,7 +27,7 @@ public class Ident_IDTest {
 
     @Given("user navigates to {string}")
     public void userNavigatesTo(String str) {
-        Driver.get().get("str");
+        Driver.get().get(str);
     }
 
     @And("user fills in the required fields retrieving the data from the {string} row of the {string}")
@@ -82,7 +82,7 @@ public class Ident_IDTest {
         System.out.println("Ident_ID = " + Ident_ID);
     }
 
-    @Then("user launches to the app and assert Ident-ID field is empty")
+    @Given("user launches to the app and assert Ident-ID field is empty")
     public void user_launches_to_the_app_and_assert_ident_id_field_is_empty() {
         Ident_IdTest ident_idTest = new Ident_IdTest();
         ident_idTest.setUp();
