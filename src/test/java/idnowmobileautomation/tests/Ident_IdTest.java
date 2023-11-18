@@ -67,7 +67,5 @@ public class Ident_IdTest {
         //8. Abort the identification by killing the app
 
         appiumDriver.closeApp();
-
-
     }
 }

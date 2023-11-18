@@ -102,21 +102,21 @@ public class PersonalInfoPage {
 
             Driver.get().get(baseURL);
 
-            transactionNumberInputBox.sendKeys(values[0], Keys.ENTER);
+            transactionNumberInputBox.sendKeys(values[0]);
             salutationDropdown.sendKeys("Mr.");
-            firstnameInputBox.sendKeys(values[1],Keys.ENTER);
-            surnameInputBox.sendKeys( values[2],Keys.ENTER);
+            firstnameInputBox.sendKeys(values[1]);
+            surnameInputBox.sendKeys( values[2]);
             birthdayDropdown.sendKeys("12");
             monthDropdown.sendKeys("June");
             yearDropdown.sendKeys("1972");
-            placeOfBirthInputBox.sendKeys( values[3],Keys.ENTER);
-            streetInputBox.sendKeys(values[4],Keys.ENTER);
-            houseNumberInputBox.sendKeys( values[5],Keys.ENTER);
-            zipCodeInputBox.sendKeys( values[6],Keys.ENTER);
-            cityInputBox.sendKeys( values[7],Keys.ENTER);
+            placeOfBirthInputBox.sendKeys( values[3]);
+            streetInputBox.sendKeys(values[4]);
+            houseNumberInputBox.sendKeys( values[5]);
+            zipCodeInputBox.sendKeys( values[6]);
+            cityInputBox.sendKeys( values[7]);
             countryDropdown.sendKeys("Germany");
-            eMailInputBox.sendKeys( values[8],Keys.ENTER);
-            mobileNumberInputBox.sendKeys( values[9],Keys.ENTER);
+            eMailInputBox.sendKeys( values[8]);
+            mobileNumberInputBox.sendKeys( values[9]);
 
             ((JavascriptExecutor) Driver.get()).executeScript("arguments[0].scrollIntoView(true);",
                     consentCheckBox);
