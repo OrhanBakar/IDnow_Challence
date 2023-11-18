@@ -17,7 +17,7 @@ public class PersonalInfoTest {
     @Test
     public void fillPersonalInfoForm() {
         formPageUI.fillPersonalInfoForm(ConfigurationReader.get("baseURL"),
-                "UserData.csv", 10);
+                "UserData.csv", 2);
         Ident_ID=formPageUI.ident_ID.getText();
         System.out.println("Ident_ID = " + Ident_ID);
 
