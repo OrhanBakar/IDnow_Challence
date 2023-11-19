@@ -11,11 +11,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.time.Duration;
+
 public class Ident_IdPage {
 
 
     AppiumDriver appiumDriver;
-   WebDriverWait wait;
+   WebDriverWait wait = new WebDriverWait(appiumDriver, Duration.ofSeconds(5000L));
     public Ident_IdPage(AppiumDriver<MobileElement> appiumDriver) {
         PageFactory.initElements(new AppiumFieldDecorator(appiumDriver), this);
     }
@@ -50,7 +52,7 @@ public class Ident_IdPage {
     }
 
     public boolean isIdentIDEmpty() {
-        wait.until(ExpectedConditions.invisibilityOf(identNummerBox));
+        wait.until(ExpectedConditions.visibilityOf(identNummerBox));
         return identNummerBox.getText().isEmpty();
     }
 
@@ -64,7 +66,7 @@ public class Ident_IdPage {
     }
 
     public void isTermsAndConditionsScreenDisplayed() {
-        wait.until(ExpectedConditions.invisibilityOf(termsAndConditionsHeader));
+        wait.until(ExpectedConditions.visibilityOf(termsAndConditionsHeader));
         Assert.assertTrue(termsAndConditionsHeader.isDisplayed(), "Terms and Conditions screen is not displayed");
     }
 
@@ -79,7 +81,7 @@ public class Ident_IdPage {
     }
     public void navigateBackToTermsAndConditions() {
         appiumDriver.navigate().back();
-        wait.until(ExpectedConditions.invisibilityOf(termsAndConditionsHeader));
+        wait.until(ExpectedConditions.visibilityOf(termsAndConditionsHeader));
         Assert.assertTrue(termsAndConditionsHeader.isDisplayed(), "Terms and Conditions screen is not displayed");
 
     }

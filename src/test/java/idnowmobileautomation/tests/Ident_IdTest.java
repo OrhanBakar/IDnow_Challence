@@ -29,7 +29,7 @@ public class Ident_IdTest {
             cap.setCapability("skipUnlock", "true");
             cap.setCapability("noReset", "false");
             cap.setCapability("automationName", "UIAutomator2");
-            cap.setCapability("app", "AutoIdentSampleApp.apk");
+            cap.setCapability("app", "ApiDemos-debug.apk");
 
             appiumDriver = new AndroidDriver<>(new URL("http://127.0.0.1:4723"), cap);
             identIdPage = new Ident_IdPage(appiumDriver);

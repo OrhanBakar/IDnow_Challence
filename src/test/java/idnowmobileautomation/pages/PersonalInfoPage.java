@@ -80,7 +80,7 @@ public class PersonalInfoPage {
     public WebElement transactionNumberInputBox;
 
 
-    WebDriverWait wait;
+    WebDriverWait wait=new WebDriverWait(Driver.get(),Duration.ofSeconds(5000L));
 
     public void fillPersonalInfoForm(String baseURL,String csvFilePath, int targetRow) {
 
@@ -120,7 +120,8 @@ public class PersonalInfoPage {
 
             ((JavascriptExecutor) Driver.get()).executeScript("arguments[0].scrollIntoView(true);",
                     consentCheckBox);
-            wait.until(ExpectedConditions.elementToBeClickable(consentCheckBox)).click();
+            wait.until(ExpectedConditions.elementToBeClickable(consentCheckBox));
+            consentCheckBox.click();
             Assert.assertTrue(consentCheckBox.isSelected(),"Please select the Consent Box!");
             continueButton.click();
 
