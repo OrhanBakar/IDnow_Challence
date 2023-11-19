@@ -48,8 +48,6 @@ public class Ident_IdPage {
     @AndroidFindBy(id="com.android.permissioncontroller:id/permission_allow_foreground_only_button")
     public WebElement allowCameraAccess;
 
-
-
     public String accessIdentNumber(){
 
         return PersonalInfoTest.Ident_ID;
