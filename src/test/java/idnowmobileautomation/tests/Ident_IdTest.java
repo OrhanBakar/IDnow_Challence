@@ -22,14 +22,14 @@ public class Ident_IdTest {
         try {
             DesiredCapabilities cap = new DesiredCapabilities();
 
-            cap.setCapability("deviceName", "samsung SM-A715F API 33");
+            cap.setCapability("deviceName", "IDnow2");
             cap.setCapability("platformName", "Android");
             cap.setCapability("appPackage", "de.idnow.androidaidemo");
             cap.setCapability("appActivity", "de.idnow.android.IDnowDemoMainActivity");
             cap.setCapability("skipUnlock", "true");
             cap.setCapability("noReset", "false");
             cap.setCapability("automationName", "UIAutomator2");
-            cap.setCapability("app", "AutoIdentSampleApp (1).apk");
+            cap.setCapability("app", "AutoIdentSampleApp.apk");
 
             appiumDriver = new AndroidDriver<>(new URL("http://127.0.0.1:4723"), cap);
             identIdPage = new Ident_IdPage(appiumDriver);
