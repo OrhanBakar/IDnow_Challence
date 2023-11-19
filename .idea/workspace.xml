@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9078552-3a59-4cb2-a782-089dbdf4e496" name="Changes" comment="You can find the answers of the part-1 and part-2 in IDnowCodeCjallende file" />
+    <list default="true" id="f9078552-3a59-4cb2-a782-089dbdf4e496" name="Changes" comment="You can find the answers of the part-1 and part-2 in IDnowCodeCjallende file">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IDnowCodeChallande" beforeDir="false" afterPath="$PROJECT_DIR$/IDnowCodeChallande" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/pages/Ident_IdPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/pages/Ident_IdPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/pages/PersonalInfoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/pages/PersonalInfoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/step_definitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/step_definitions/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/step_definitions/Ident_IDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/step_definitions/Ident_IDTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/tests/PersonalInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/tests/PersonalInfoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Ident_IDTest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Ident_IDTest.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testNG.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +52,9 @@
     "Cucumber Java.Scenario: .executor": "Run",
     "Cucumber Java.Scenario: With the sample app from https://go.wetransfer.com/t-BCrrwNSzUF.executor": "Run",
     "JUnit.CukesRunner.executor": "Run",
+    "Maven.MobileTestIDnow [clean].executor": "Run",
+    "Maven.MobileTestIDnow [test].executor": "Run",
+    "Maven.MobileTestIDnow [verify].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -72,7 +86,7 @@
       <recent name="C:\Users\obkr4\AquaProjects\MobileTestIDnow" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Ident_IdTest.testName">
+  <component name="RunManager" selected="TestNG.PersonalInfoTest.fillPersonalInfoForm">
     <configuration name="Scenario:  (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Ident_IDTest.feature" />
@@ -166,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Ident_IdTest.testName" />
         <item itemvalue="TestNG.PersonalInfoTest.fillPersonalInfoForm" />
+        <item itemvalue="Cucumber Java.Scenario:  (1)" />
+        <item itemvalue="TestNG.Ident_IdTest.testName" />
         <item itemvalue="TestNG.Ident_IdTest.IdentIdPageValidation" />
         <item itemvalue="TestNG.Ident_IdTest" />
-        <item itemvalue="Cucumber Java.Scenario:  (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +203,7 @@
       <workItem from="1699971582718" duration="350000" />
       <workItem from="1699974410551" duration="738000" />
       <workItem from="1700230147162" duration="8278000" />
-      <workItem from="1700319802392" duration="12959000" />
+      <workItem from="1700319802392" duration="24172000" />
     </task>
     <task id="LOCAL-00001" summary="You can find the answers of the part-1 and part-2 in IDnowCodeCjallende file">
       <option name="closed" value="true" />
@@ -343,7 +357,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700407382165</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="You can find the answers of the part-1 and part-2 in IDnowCodeCjallende file">
+      <option name="closed" value="true" />
+      <created>1700408032673</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1700408032673</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

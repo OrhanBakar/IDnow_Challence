@@ -1,10 +1,8 @@
 package idnowmobileautomation.tests;
 
-import idnowmobileautomation.pages.Ident_IdPage;
 import idnowmobileautomation.pages.PersonalInfoPage;
 import idnowmobileautomation.utilities.ConfigurationReader;
 import idnowmobileautomation.utilities.Driver;
-import io.appium.java_client.MobileElement;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 

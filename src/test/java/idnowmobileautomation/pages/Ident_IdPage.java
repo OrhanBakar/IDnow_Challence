@@ -1,5 +1,6 @@
 package idnowmobileautomation.pages;
 
+import com.sun.istack.NotNull;
 import idnowmobileautomation.tests.PersonalInfoTest;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -20,12 +21,12 @@ public class Ident_IdPage {
 
     public Ident_IdPage(AppiumDriver<MobileElement> appiumDriver) {
         this.appiumDriver = appiumDriver;
-        this.wait = new WebDriverWait(appiumDriver, Duration.ofSeconds(10));
+        this.wait = new WebDriverWait(appiumDriver,Duration.ofSeconds(10));
         PageFactory.initElements(new AppiumFieldDecorator(appiumDriver), this);
     }
 
     @AndroidFindBy(id="de.idnow.androidaidemo:id/editTextCode")
-    public MobileElement identIDBox;
+    public WebElement identIDBox;
 
     @AndroidFindBy(id="de.idnow.androidaidemo:id/editTextCode")
     public WebElement identNummerBox;

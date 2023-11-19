@@ -3,7 +3,7 @@ Feature: Ident_ID MobileApp Test
   User story: As I User I should be able to use IDnow Mobile App
 
   Scenario:
-    Given user navigates to "https://go.test.idnow.de/regressionallsteps/userdata"
+    Given user navigates to baseURL
     And user fills in the required fields retrieving the data from the "10" row of the "UserData.csv"
     Then Continues to the next screen and selects (identify using your mobile phone) and notes down the Ident-ID, which will look like this: TST-XXXXX
 

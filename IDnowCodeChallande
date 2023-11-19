@@ -4,9 +4,8 @@ GET identifications?status=in_progress&startIndex=0&pageSize=2 → A, B
 
 What pagination errors do you expect and how to fix them?
 
-Pagination is the process of dividing a set of items into discrete pages. It's commonly used in web applications to display
-a large number of items without overwhelming the user.It is commonly used in mobile applications, especially when dealing with
-large sets of data. Here are a few reasons why pagination is relevant for mobile app testing:
+Pagination is the process of dividing a set of items into discrete pages. It's commonly used in web applications and in mobile
+applications, especially when dealing with large sets of data. Here are a few reasons why pagination is relevant for mobile app testing:
 
 Performance Testing:
 
@@ -98,9 +97,6 @@ So the potential pagination errors could be:
 The shutil.copy function is used to perform the actual file copy operation. It's a part of the standard library and provides a simple
 way to copy files.
 
-The try-except block is used to handle different scenarios, such as the source file not being found, permission errors, or any other
-unexpected exceptions.
-
 The test cases cover various scenarios, including successful copy, source file not found, permission errors, using a directory as
 source or destination, handling an empty source file, and attempting to copy a file to itself.
 
@@ -115,9 +111,12 @@ def copy(source, dest):
 
         shutil.copy(source, dest)
         print(f"File copied successfully from {source} to {dest}")
+
     except FileNotFoundError:
         print("Source file not found. Copy operation failed.")
+
     except PermissionError:
         print("Permission error. Copy operation failed.")
+
     except Exception as e:
         print(f"An error occurred: {e}. Copy operation failed.")

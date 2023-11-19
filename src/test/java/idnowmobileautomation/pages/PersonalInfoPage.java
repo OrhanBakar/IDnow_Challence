@@ -80,7 +80,7 @@ public class PersonalInfoPage {
     public WebElement transactionNumberInputBox;
 
 
-    WebDriverWait wait=new WebDriverWait(Driver.get(),Duration.ofSeconds(5000L));
+    WebDriverWait wait=new WebDriverWait(Driver.get(),Duration.ofSeconds(10));
 
     public void fillPersonalInfoForm(String baseURL,String csvFilePath, int targetRow) {
 

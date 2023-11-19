@@ -3,6 +3,7 @@ package idnowmobileautomation.step_definitions;
 import idnowmobileautomation.pages.PersonalInfoPage;
 import idnowmobileautomation.pages.Ident_IdPage;
 import idnowmobileautomation.tests.Ident_IdTest;
+import idnowmobileautomation.utilities.ConfigurationReader;
 import idnowmobileautomation.utilities.Driver;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -25,9 +26,10 @@ public class Ident_IDTest {
     WebDriverWait wait;
     String Ident_ID;
 
-    @Given("user navigates to {string}")
-    public void userNavigatesTo(String str) {
-        Driver.get().get(str);
+    @Given("user navigates to baseURL")
+    public void userNavigatesTo() {
+        Driver.get().get(ConfigurationReader.get("baseURL"));
+
     }
 
     @And("user fills in the required fields retrieving the data from the {string} row of the {string}")
