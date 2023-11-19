@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9078552-3a59-4cb2-a782-089dbdf4e496" name="Changes" comment="You can find the answers of the part-1 and part-2 in IDnowCodeCjallende file">
-      <change afterPath="$PROJECT_DIR$/ApiDemos-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/pages/PersonalInfoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/pages/PersonalInfoPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/tests/Ident_IdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/tests/Ident_IdTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/tests/PersonalInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/tests/PersonalInfoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testNG.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/pages/Ident_IdPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/idnowmobileautomation/pages/Ident_IdPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,34 +37,35 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Cucumber Java.Scenario:  (1).executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: .executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: With the sample app from https://go.wetransfer.com/t-BCrrwNSzUF.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CukesRunner.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.FillingFormUITest.fillPersonalInfoForm.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.IDnowCodeChallenge.IdentId_VerificationTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.IDnowCodeChallenge.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.IDnowCodeChallenge.fillPersonalInfoForm.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Ident_IDPage.openWebsite.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Ident_IdTest.IdentIdPageValidation.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Ident_IdTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.PersonalInfoTest.fillPersonalInfoForm.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/obkr4/AquaProjects/MobileTestIDnow&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Scenario:  (1).executor": "Run",
+    "Cucumber Java.Scenario: .executor": "Run",
+    "Cucumber Java.Scenario: With the sample app from https://go.wetransfer.com/t-BCrrwNSzUF.executor": "Run",
+    "JUnit.CukesRunner.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.FillingFormUITest.fillPersonalInfoForm.executor": "Run",
+    "TestNG.IDnowCodeChallenge.IdentId_VerificationTest.executor": "Run",
+    "TestNG.IDnowCodeChallenge.executor": "Run",
+    "TestNG.IDnowCodeChallenge.fillPersonalInfoForm.executor": "Run",
+    "TestNG.Ident_IDPage.openWebsite.executor": "Run",
+    "TestNG.Ident_IdTest.IdentIdPageValidation.executor": "Run",
+    "TestNG.Ident_IdTest.executor": "Run",
+    "TestNG.Ident_IdTest.testName.executor": "Run",
+    "TestNG.PersonalInfoTest.fillPersonalInfoForm.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/obkr4/AquaProjects/MobileTestIDnow",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\obkr4\AquaProjects\MobileTestIDnow" />
@@ -195,7 +191,7 @@
       <workItem from="1699971582718" duration="350000" />
       <workItem from="1699974410551" duration="738000" />
       <workItem from="1700230147162" duration="8278000" />
-      <workItem from="1700319802392" duration="10751000" />
+      <workItem from="1700319802392" duration="11560000" />
     </task>
     <task id="LOCAL-00001" summary="You can find the answers of the part-1 and part-2 in IDnowCodeCjallende file">
       <option name="closed" value="true" />
@@ -325,7 +321,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700400594589</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="You can find the answers of the part-1 and part-2 in IDnowCodeCjallende file">
+      <option name="closed" value="true" />
+      <created>1700404843224</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1700404843224</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -15,12 +15,8 @@ import java.time.Duration;
 
 public class Ident_IdPage {
 
-
-    AppiumDriver appiumDriver;
-   WebDriverWait wait = new WebDriverWait(appiumDriver, Duration.ofSeconds(5000L));
-    public Ident_IdPage(AppiumDriver<MobileElement> appiumDriver) {
-        PageFactory.initElements(new AppiumFieldDecorator(appiumDriver), this);
-    }
+    private AppiumDriver appiumDriver;
+    private WebDriverWait wait;
 
     @AndroidFindBy(id="de.idnow.androidaidemo:id/editTextCode")
     public MobileElement identIDBox;
@@ -46,9 +42,15 @@ public class Ident_IdPage {
     @AndroidFindBy(id="com.android.permissioncontroller:id/permission_allow_foreground_only_button")
     public WebElement allowCameraAccess;
 
+    public Ident_IdPage(AppiumDriver<MobileElement> appiumDriver) {
+        this.appiumDriver = appiumDriver;
+        this.wait = new WebDriverWait(appiumDriver, Duration.ofSeconds(10));
+        PageFactory.initElements(new AppiumFieldDecorator(appiumDriver), this);
+    }
+
     public String accessIdentNumber(){
-        String identNumber=PersonalInfoTest.Ident_ID;
-        return identNumber;
+
+        return PersonalInfoTest.Ident_ID;
     }
 
     public boolean isIdentIDEmpty() {
@@ -57,12 +59,10 @@ public class Ident_IdPage {
     }
 
     public void isConfirmButtonActivated() {
-
         identIDBox.sendKeys(accessIdentNumber());
         wait.until(ExpectedConditions.elementToBeClickable(confirmButton));
         Assert.assertTrue(confirmButton.isEnabled(),"Confirm button is not activated");
         confirmButton.click();
-
     }
 
     public void isTermsAndConditionsScreenDisplayed() {
@@ -71,45 +71,31 @@ public class Ident_IdPage {
     }
 
     public void navigateToPrivacyPolicy() {
-
         Assert.assertTrue(privacyPolicyLink.isDisplayed(), "Privacy Policy link is not displayed");
         privacyPolicyLink.click();
         wait.until(ExpectedConditions.urlContains("privacy"));
         Assert.assertTrue(appiumDriver.getCurrentUrl().contains("privacy"),"We are not on the Privacy Policy page");
-
-
     }
+
     public void navigateBackToTermsAndConditions() {
         appiumDriver.navigate().back();
         wait.until(ExpectedConditions.visibilityOf(termsAndConditionsHeader));
         Assert.assertTrue(termsAndConditionsHeader.isDisplayed(), "Terms and Conditions screen is not displayed");
-
     }
 
     public void checkTermsAndConditionsBox() {
         wait.until(ExpectedConditions.elementToBeClickable(termsAndConditionsCheckbox));
         termsAndConditionsCheckbox.click();
-
     }
 
     public void confirmTermsAndConditions() {
         wait.until(ExpectedConditions.elementToBeClickable(startIdentButton));
         Assert.assertTrue(startIdentButton.isDisplayed(), "The Start Ident button is not clickable");
         startIdentButton.click();
-
     }
 
     public void allowCameraAccess() {
         wait.until(ExpectedConditions.elementToBeClickable(allowCameraAccess));
         allowCameraAccess.click();
     }
-
-
-
-
-
-
-
-
-
 }
