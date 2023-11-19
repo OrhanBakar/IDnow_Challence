@@ -18,6 +18,12 @@ public class Ident_IdPage {
     private AppiumDriver appiumDriver;
     private WebDriverWait wait;
 
+    public Ident_IdPage(AppiumDriver<MobileElement> appiumDriver) {
+        this.appiumDriver = appiumDriver;
+        this.wait = new WebDriverWait(appiumDriver, Duration.ofSeconds(10));
+        PageFactory.initElements(new AppiumFieldDecorator(appiumDriver), this);
+    }
+
     @AndroidFindBy(id="de.idnow.androidaidemo:id/editTextCode")
     public MobileElement identIDBox;
 
@@ -42,11 +48,7 @@ public class Ident_IdPage {
     @AndroidFindBy(id="com.android.permissioncontroller:id/permission_allow_foreground_only_button")
     public WebElement allowCameraAccess;
 
-    public Ident_IdPage(AppiumDriver<MobileElement> appiumDriver) {
-        this.appiumDriver = appiumDriver;
-        this.wait = new WebDriverWait(appiumDriver, Duration.ofSeconds(10));
-        PageFactory.initElements(new AppiumFieldDecorator(appiumDriver), this);
-    }
+
 
     public String accessIdentNumber(){
 
